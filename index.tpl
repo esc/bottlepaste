@@ -280,7 +280,7 @@ Also some well knowen file names are dissallowed.</p>
 </div>
 <div class="footer">
 <hr class="footer" />
-<strong>© 2012 Valentin Haenel -- proudly hosted on »</strong> <a class="reference external" href="https://cloudcontroll.com">cloudControl</a>  <strong>«</strong>
+<strong>© 2012 Valentin Haenel -- proudly hosted on »</strong> <a class="reference external" href="https://www.cloudcontrol.com/">cloudControl</a>  <strong>«</strong>
 </div>
 </body>
 </html>
