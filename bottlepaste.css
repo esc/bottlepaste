@@ -1,0 +1,164 @@
+/*
+
+:bottlepaste.css:
+:Author: Valentin Haenel
+
+Heavily based on voidspace, by:
+
+:Authors: Ian Bicking, Michael Foord
+:Contact: fuzzyman@voidspace.org.uk
+:Date: 2005/08/26 
+:Version: 0.1.0
+:Copyright: This stylesheet has been placed in the public domain.
+
+Stylesheet for Docutils.
+Based on ``blue_box.css`` by Ian Bicking
+and ``html4css1.css`` revision 1.46.
+*/
+
+@import url(html4css1.css);
+
+body {
+  font-family: Arial, sans-serif;
+  width: 950px;
+  margin: 1em auto .5em;
+  padding: 10px;
+  color: #222;
+  background-color:#F6EB9B;
+  border: medium solid #444; 
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+
+em, i {
+  /* Typically serif fonts have much nicer italics */
+  font-family: Times New Roman, Times, serif;
+}
+
+a.target {
+  color: blue;
+}
+
+a.target {
+  color: blue;
+}
+
+a.toc-backref {
+  text-decoration: none;
+  color: #444;
+}
+
+a.toc-backref:hover {
+  background-color: inherit;
+}
+
+a:hover {
+  background-color: #cccccc;
+}
+
+div.attention, div.caution, div.danger, div.error, div.hint,
+div.important, div.note, div.tip, div.warning {
+  background-color: #cccccc;
+  padding: 3px;
+  width: 80%;
+}
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title  {
+  text-align: center;
+  background-color: #999999;
+  display: block;
+  margin: 0;
+}
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title {
+  color: #cc0000;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #999999;
+  display: block;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica, Arial, sans-serif;
+  /* This makes the borders rounded on Mozilla, which pleases me */
+}
+
+h1 {
+  color: #444;
+}
+
+
+h3, h4, h5, h6 {
+  background-color: #cccccc;
+  color: #000000;
+}
+
+h3 a.toc-backref, h4 a.toc-backref, h5 a.toc-backref, 
+h6 a.toc-backref { 
+  color: #000000;
+}
+
+h1.title {
+  text-align: center;
+  background-color: #666699;
+  color: #cfcfcf;
+  border: thick solid #444;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+
+table.footnote {
+  padding-left: 0.5ex;
+  text-align: center;
+}
+
+table.citation {
+  padding-left: 0.5ex
+}
+
+pre.literal-block, pre.doctest-block {
+  border: thin #444 solid;
+  background-color: #cfcfcf;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  padding: 5px;
+}
+
+.image img { border-style : solid;
+            border-width : 2px;
+}
+
+h1 tt, h2 tt, h3 tt, h4 tt, h5 tt, h6 tt {
+  font-size: 100%;
+}
+
+code, tt {
+  color: #272727;
+  background-color: #cfcfcf;
+  border: thin #444 solid;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+div.footer {
+  text-align: center;
+}
+
+a, a:active, a:visited {
+    color: #666699;
+    text-decoration: none;
+}
+a:hover {
+    border: thin #444 solid;
+    color: #cfcfcf;
+    background-color: #666699;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+ul { list-style: none }
+li:before { content: "\00BB \0020"; font-weight:bold }
