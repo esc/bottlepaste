@@ -1,31 +1,41 @@
 bottlepaste
------------
+===========
 
 A command line pastebin akin to `sprunge.us <http://sprunge.us/>`_ but using
-`bottle.py <http://bottlepy.org/docs/dev/bottle.py>`_.
+`bottle.py <http://bottlepy.org/>`_ as webframework and
+`MongoDB <http://www.mongodb.org/>`_ via `PyMongo
+<http://api.mongodb.org/python/current/>`_ as storage.
 
 Synposis
 --------
-::
 
-    <command> | curl -F 'bp=<-' [-F 'uid=<uid>'] $DEPLOYMENT_URL
+.. code:: console
+
+    $ <command> | curl -F 'bp=<-' [-F 'uid=<uid>'] DEPLOYMENT_URL
 
 Example
 -------
 
-Use curl to paste::
+Use curl to paste:
 
-    $ cat bottlepaste.py | curl -F 'bp=<-' $DEPLOYMENT_URL
-    $DEPLOYMENT_URL/ec42eda
+.. code:: console
 
-If you want a custom uid, use::
+    $ cat bottlepaste.py | curl -F 'bp=<-' DEPLOYMENT_URL
+    DEPLOYMENT_URL/ec42eda
 
-    $ cat bottlepaste.py | curl -F 'bp=<-' -F 'uid=bottlepaste.py' $DEPLOYMENT_URL
-    $DEPLOYMENT_URL/bottlepaste.py
+If you want a custom uid, use:
 
-The ``uid`` is goverend by the following regex: ``'^[a-zA-Z0-9_\-\.]{3,23}$``
+.. code:: console
+
+    $ cat bottlepaste.py | curl -F 'bp=<-' -F 'uid=bottlepaste.py' DEPLOYMENT_URL
+    DEPLOYMENT_URL/bottlepaste.py
+
+The ``uid`` is goverend by the following regex: ``'^[a-zA-Z0-9_\-\.]{3,23}$'``
+and some well knowen file names are dissallowed.
 
 See Also
 --------
 
-`github repository <https://github.com/esc/bottlepaste>`_
+* `github repository <https://github.com/esc/bottlepaste>`_
+
+.. footer:: © 2012 Valentin Haenel and proudly hosted on `cloudControl <https://cloudcontrol.com>`_
