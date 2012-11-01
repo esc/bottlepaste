@@ -147,6 +147,11 @@ code, tt {
 
 div.footer {
   text-align: center;
+  background-color: #666699;
+  color: #cfcfcf;
+  border: thick solid #444;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
 }
 
 a, a:active, a:visited {
@@ -154,7 +159,6 @@ a, a:active, a:visited {
     text-decoration: none;
 }
 a:hover {
-    border: thin #444 solid;
     color: #cfcfcf;
     background-color: #666699;
     border-radius: 5px;

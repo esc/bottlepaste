@@ -6,15 +6,15 @@ A command line pastebin akin to `sprunge.us <http://sprunge.us/>`_ but using
 `MongoDB <http://www.mongodb.org/>`_ via `PyMongo
 <http://api.mongodb.org/python/current/>`_ as storage.
 
-Synposis
---------
+» Synposis
+----------
 
 .. code:: console
 
     $ <command> | curl -F 'bp=<-' [-F 'uid=<uid>'] DEPLOYMENT_URL
 
-Examples
---------
+» Examples
+----------
 
 .. code:: console
 
@@ -32,9 +32,9 @@ Examples
 The ``uid`` paramter is subject to the following regex: ``'^[a-zA-Z0-9_\-\.]{3,23}$'``.
 Also some well knowen file names are dissallowed.
 
-See Also
---------
+» See also
+----------
 
 * `github repository <https://github.com/esc/bottlepaste>`_
 
-.. footer:: © 2012 Valentin Haenel and proudly hosted on `cloudControl <https://cloudcontrol.com>`_
+.. footer:: **© 2012 Valentin Haenel -- proudly hosted on »** `cloudControl <https://cloudcontroll.com>`_  **«**
