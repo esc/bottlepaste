@@ -36,10 +36,8 @@ use::
 Deployment
 ----------
 
-The cloudControl specific customizations and files  are stored in the
-``custom`` branch. When deploying, the ``custom`` branch is rebased onto the
-local master, then pushed to ``master`` on the remote side and then deployed as
-the ``default`` deployment. See the ``magic.sh`` script for how it's done.
+The app is *meant* to be deployed to cloudControl, hence all the additional
+files are in master. See the ``magic.sh`` script for how it's done.
 Incidentally, since cloudControl uses ``buildpacks`` you *should* be able tp
 deploy this app to heroku too.
 
