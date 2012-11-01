@@ -19,6 +19,20 @@ Stability
 
 This software is in alpha stage. Don't depend in any way on the links.
 
+``index.html``
+--------------
+
+The main page use a variation of the docutils ``voidspace.css`` and ``vs.css``
+for syntax highlighting. Because docutils is too difficult to use from python,
+we chose an interim solution and the index page is checked into the repository
+for now and then templated inside bottlepaste with a URL. The styles are
+embedded.
+
+To regenerate the page
+use::
+
+    $ rst2html.py --stylesheet-path=bottlepaste.css,github.css index.rst index.tpl
+
 Deployment
 ----------
 
