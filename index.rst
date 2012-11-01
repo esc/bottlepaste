@@ -37,4 +37,4 @@ Also some well knowen file names are dissallowed.
 
 * `github repository <https://github.com/esc/bottlepaste>`_
 
-.. footer:: **© 2012 Valentin Haenel -- proudly hosted on »** `cloudControl <https://cloudcontroll.com>`_  **«**
+.. footer:: **© 2012 Valentin Haenel -- proudly hosted on »** `cloudControl <https://www.cloudcontrol.com/>`_  **«**
