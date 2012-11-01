@@ -13,25 +13,24 @@ Synposis
 
     $ <command> | curl -F 'bp=<-' [-F 'uid=<uid>'] DEPLOYMENT_URL
 
-Example
--------
-
-Use curl to paste:
+Examples
+--------
 
 .. code:: console
 
+    # Use curl to paste:
     $ cat bottlepaste.py | curl -F 'bp=<-' DEPLOYMENT_URL
     DEPLOYMENT_URL/ec42eda
 
-If you want a custom uid, use:
 
 .. code:: console
 
+    # If you want a custom uid, use:
     $ cat bottlepaste.py | curl -F 'bp=<-' -F 'uid=bottlepaste.py' DEPLOYMENT_URL
     DEPLOYMENT_URL/bottlepaste.py
 
-The ``uid`` is goverend by the following regex: ``'^[a-zA-Z0-9_\-\.]{3,23}$'``
-and some well knowen file names are dissallowed.
+The ``uid`` paramter is subject to the following regex: ``'^[a-zA-Z0-9_\-\.]{3,23}$'``.
+Also some well knowen file names are dissallowed.
 
 See Also
 --------
