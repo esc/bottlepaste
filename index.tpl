@@ -156,6 +156,11 @@ code, tt {
 
 div.footer {
   text-align: center;
+  background-color: #666699;
+  color: #cfcfcf;
+  border: thick solid #444;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
 }
 
 a, a:active, a:visited {
@@ -163,7 +168,6 @@ a, a:active, a:visited {
     text-decoration: none;
 }
 a:hover {
-    border: thin #444 solid;
     color: #cfcfcf;
     background-color: #666699;
     border-radius: 5px;
@@ -247,28 +251,28 @@ li:before { content: "\00BB \0020"; font-weight:bold }
 <a class="reference external" href="http://bottlepy.org/">bottle.py</a> as webframework and
 <a class="reference external" href="http://www.mongodb.org/">MongoDB</a> via <a class="reference external" href="http://api.mongodb.org/python/current/">PyMongo</a> as storage.</p>
 <div class="section" id="synposis">
-<h1>Synposis</h1>
+<h1>» Synposis</h1>
 <pre class="code console literal-block">
 <span class="gp">$</span> &lt;<span class="nb">command</span>&gt; | curl -F <span class="s1">'bp=&lt;-'</span> <span class="o">[</span>-F <span class="s1">'uid=&lt;uid&gt;'</span><span class="o">]</span> DEPLOYMENT_URL
 </pre>
 </div>
-<div class="section" id="example">
-<h1>Example</h1>
-<p>Use curl to paste:</p>
+<div class="section" id="examples">
+<h1>» Examples</h1>
 <pre class="code console literal-block">
+<span class="gp">#</span> Use curl to paste:
 <span class="gp">$</span> cat bottlepaste.py | curl -F <span class="s1">'bp=&lt;-'</span> DEPLOYMENT_URL
 <span class="go">DEPLOYMENT_URL/ec42eda</span>
 </pre>
-<p>If you want a custom uid, use:</p>
 <pre class="code console literal-block">
+<span class="gp">#</span> If you want a custom uid, use:
 <span class="gp">$</span> cat bottlepaste.py | curl -F <span class="s1">'bp=&lt;-'</span> -F <span class="s1">'uid=bottlepaste.py'</span> DEPLOYMENT_URL
 <span class="go">DEPLOYMENT_URL/bottlepaste.py</span>
 </pre>
-<p>The <tt class="docutils literal">uid</tt> is goverend by the following regex: <tt class="docutils literal"><span class="pre">'^[a-zA-Z0-9_\-\.]{3,23}$'</span></tt>
-and some well knowen file names are dissallowed.</p>
+<p>The <tt class="docutils literal">uid</tt> paramter is subject to the following regex: <tt class="docutils literal"><span class="pre">'^[a-zA-Z0-9_\-\.]{3,23}$'</span></tt>.
+Also some well knowen file names are dissallowed.</p>
 </div>
 <div class="section" id="see-also">
-<h1>See Also</h1>
+<h1>» See also</h1>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/esc/bottlepaste">github repository</a></li>
 </ul>
@@ -276,7 +280,7 @@ and some well knowen file names are dissallowed.</p>
 </div>
 <div class="footer">
 <hr class="footer" />
-© 2012 Valentin Haenel and proudly hosted on <a class="reference external" href="https://cloudcontrol.com">cloudControl</a>
+<strong>© 2012 Valentin Haenel -- proudly hosted on »</strong> <a class="reference external" href="https://cloudcontroll.com">cloudControl</a>  <strong>«</strong>
 </div>
 </body>
 </html>
