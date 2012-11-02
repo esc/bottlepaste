@@ -32,6 +32,20 @@ A command line pastebin akin to `sprunge.us <http://sprunge.us/>`_ but using
 The ``uid`` paramter is subject to the following regex: ``'^[a-zA-Z0-9_\-\.]{3,23}$'``.
 Also some well knowen file names are dissallowed.
 
+For convenience you can download the `bpaste script <http://bottlepaste.zetatech.org/bpaste>`_:
+
+.. include:: bpaste
+    :code: sh
+
+.. code:: console
+
+    # Get the file and make it executable
+    $ wget http://bottlepaste.zetatech.org/bpaste
+    $ chmod +x bpaste
+    # Use bpaste to paste to bottlepaste:
+    $ cat bpaste | ./bpaste
+    DEPLOYMENT_URL/58f3857
+
 » See also
 ----------
 
