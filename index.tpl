@@ -99,6 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   color: #444;
+  font-size: 150%;
 }
 
 
@@ -119,6 +120,7 @@ h1.title {
   border: thick solid #444;
   border-radius: 20px;
   -moz-border-radius: 20px;
+  font-size: 200%;
 }
 
 table.footnote {
