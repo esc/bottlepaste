@@ -51,4 +51,4 @@ For convenience you can download the `bpaste script <http://bottlepaste.zetatech
 
 * `github repository <https://github.com/esc/bottlepaste>`_
 
-.. footer:: **© 2012 Valentin Haenel -- proudly hosted on »** `cloudControl <https://www.cloudcontrol.com/>`_  **«**
+.. footer:: **© 2012 Valentin Haenel -- proudly hosted on »** `cloudControl <https://www.cloudcontrol.com/>`_   **« using a database hosted on »** `mongolab <https://mongolab.com/home>`_ **«**
