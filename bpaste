@@ -1,0 +1,2 @@
+#!/bin/sh
+exec curl -F 'bp=<-' http://bottlepaste.zetatech.org
