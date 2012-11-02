@@ -163,6 +163,11 @@ div.footer {
   -moz-border-radius: 20px;
 }
 
+hr.footer {
+  border: 0;
+  height:0;
+}
+
 a, a:active, a:visited {
     color: #666699;
     text-decoration: none;
