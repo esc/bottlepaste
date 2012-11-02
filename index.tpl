@@ -277,6 +277,7 @@ li:before { content: "\00BB \0020"; font-weight:bold }
 </pre>
 <p>The <tt class="docutils literal">uid</tt> paramter is subject to the following regex: <tt class="docutils literal"><span class="pre">'^[a-zA-Z0-9_\-\.]{3,23}$'</span></tt>.
 Also some well knowen file names are dissallowed.</p>
+<p>For convenience you can download the</p>
 </div>
 <div class="section" id="see-also">
 <h1>» See also</h1>
