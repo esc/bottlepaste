@@ -25,8 +25,6 @@ Based on ``blue_box.css`` by Ian Bicking
 and ``html4css1.css`` revision 1.46.
 */
 
-@import url(html4css1.css);
-
 body {
   font-family: Arial, sans-serif;
   width: 950px;
@@ -290,7 +288,7 @@ Also some well knowen file names are dissallowed.</p>
 <span class="gp">#</span> Get the file and make it executable
 <span class="gp">$</span> wget DEPLOYMENT_URL/bpaste
 <span class="gp">$</span> chmod +x bpaste
-<span class="gp">#</span> Use bpaste to paste to bottlepaste:
+<span class="gp">#</span> Use bpaste to paste to DEPLOYMENT_URL:
 <span class="gp">$</span> cat bpaste | ./bpaste
 <span class="go">DEPLOYMENT_URL/58f3857</span>
 </pre>
