@@ -145,6 +145,7 @@ code, tt {
   border: thin #444 solid;
   border-radius: 5px;
   -moz-border-radius: 5px;
+  padding: 1px 4px;;
 }
 
 div.footer {
@@ -159,11 +160,13 @@ div.footer {
 hr.footer {
   border: 0;
   height:0;
+  display: none;
 }
 
 a, a:active, a:visited {
     color: #666699;
     text-decoration: none;
+    padding: 1px 4px;
 }
 a:hover {
     color: #cfcfcf;
