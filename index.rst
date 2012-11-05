@@ -30,7 +30,7 @@ A command line pastebin akin to `sprunge.us <http://sprunge.us/>`_ but using
     DEPLOYMENT_URL/bottlepaste.py
 
 The ``uid`` parameter is subject to the following regex: ``'^[a-zA-Z0-9_\-\.]{3,23}$'``.
-Also some well knowen file names are dissallowed.
+Also some well known file names are dissallowed.
 
 For convenience you can download the `bpaste script <DEPLOYMENT_URL/bpaste>`_:
 
