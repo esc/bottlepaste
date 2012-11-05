@@ -29,7 +29,7 @@ A command line pastebin akin to `sprunge.us <http://sprunge.us/>`_ but using
     $ cat bottlepaste.py | curl -F 'bp=<-' -F 'uid=bottlepaste.py' DEPLOYMENT_URL
     DEPLOYMENT_URL/bottlepaste.py
 
-The ``uid`` paramter is subject to the following regex: ``'^[a-zA-Z0-9_\-\.]{3,23}$'``.
+The ``uid`` parameter is subject to the following regex: ``'^[a-zA-Z0-9_\-\.]{3,23}$'``.
 Also some well knowen file names are dissallowed.
 
 For convenience you can download the `bpaste script <http://bottlepaste.zetatech.org/bpaste>`_:
