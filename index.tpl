@@ -154,6 +154,7 @@ code, tt {
   border: thin #444 solid;
   border-radius: 5px;
   -moz-border-radius: 5px;
+  padding: 1px 4px;;
 }
 
 div.footer {
@@ -168,11 +169,13 @@ div.footer {
 hr.footer {
   border: 0;
   height:0;
+  display: none;
 }
 
 a, a:active, a:visited {
     color: #666699;
     text-decoration: none;
+    padding: 1px 4px;
 }
 a:hover {
     color: #cfcfcf;
@@ -275,7 +278,7 @@ li:before { content: "\00BB \0020"; font-weight:bold }
 <span class="gp">$</span> cat bottlepaste.py | curl -F <span class="s1">'bp=&lt;-'</span> -F <span class="s1">'uid=bottlepaste.py'</span> DEPLOYMENT_URL
 <span class="go">DEPLOYMENT_URL/bottlepaste.py</span>
 </pre>
-<p>The <tt class="docutils literal">uid</tt> paramter is subject to the following regex: <tt class="docutils literal"><span class="pre">'^[a-zA-Z0-9_\-\.]{3,23}$'</span></tt>.
+<p>The <tt class="docutils literal">uid</tt> parameter is subject to the following regex: <tt class="docutils literal"><span class="pre">'^[a-zA-Z0-9_\-\.]{3,23}$'</span></tt>.
 Also some well knowen file names are dissallowed.</p>
 <p>For convenience you can download the <a class="reference external" href="http://bottlepaste.zetatech.org/bpaste">bpaste script</a>:</p>
 <pre class="code sh literal-block">
