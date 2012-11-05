@@ -44,7 +44,7 @@ For convenience you can download the `bpaste script <DEPLOYMENT_URL/bpaste>`_:
     # Get the file and make it executable
     $ wget DEPLOYMENT_URL/bpaste
     $ chmod +x bpaste
-    # Use bpaste to paste to bottlepaste:
+    # Use bpaste to paste to DEPLOYMENT_URL:
     $ cat bpaste | ./bpaste
     DEPLOYMENT_URL/58f3857
 
