@@ -278,7 +278,7 @@ li:before { content: "\00BB \0020"; font-weight:bold }
 <span class="go">DEPLOYMENT_URL/bottlepaste.py</span>
 </pre>
 <p>The <tt class="docutils literal">uid</tt> parameter is subject to the following regex: <tt class="docutils literal"><span class="pre">'^[a-zA-Z0-9_\-\.]{3,23}$'</span></tt>.
-Also some well knowen file names are dissallowed.</p>
+Also some well known file names are dissallowed.</p>
 <p>For convenience you can download the <a class="reference external" href="DEPLOYMENT_URL/bpaste">bpaste script</a>:</p>
 <pre class="code sh literal-block">
 <span class="c">#!/bin/sh
