@@ -281,14 +281,14 @@ li:before { content: "\00BB \0020"; font-weight:bold }
 </pre>
 <p>The <tt class="docutils literal">uid</tt> parameter is subject to the following regex: <tt class="docutils literal"><span class="pre">'^[a-zA-Z0-9_\-\.]{3,23}$'</span></tt>.
 Also some well knowen file names are dissallowed.</p>
-<p>For convenience you can download the <a class="reference external" href="http://bottlepaste.zetatech.org/bpaste">bpaste script</a>:</p>
+<p>For convenience you can download the <a class="reference external" href="DEPLOYMENT_URL/bpaste">bpaste script</a>:</p>
 <pre class="code sh literal-block">
 <span class="c">#!/bin/sh
-</span><span class="nb">exec </span>curl -F <span class="s1">'bp=&lt;-'</span> http://bottlepaste.zetatech.org
+</span><span class="nb">exec </span>curl -F <span class="s1">'bp=&lt;-'</span> DEPLOYMENT_URL
 </pre>
 <pre class="code console literal-block">
 <span class="gp">#</span> Get the file and make it executable
-<span class="gp">$</span> wget http://bottlepaste.zetatech.org/bpaste
+<span class="gp">$</span> wget DEPLOYMENT_URL/bpaste
 <span class="gp">$</span> chmod +x bpaste
 <span class="gp">#</span> Use bpaste to paste to bottlepaste:
 <span class="gp">$</span> cat bpaste | ./bpaste
