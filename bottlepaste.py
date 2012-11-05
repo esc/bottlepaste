@@ -11,6 +11,7 @@ import json
 import os
 import re
 import time
+import textwrap
 import zlib
 
 from bottle import route, run, request, response, abort
@@ -59,6 +60,14 @@ def parse_cred_str(cred_str):
 def description(url, filename='index.tpl'):
     """ Parse and template the index file. """
     return read_file(filename).replace("DEPLOYMENT_URL", url)
+
+
+def bpaste(url):
+    """ Parse and template the bpaste file. """
+    return textwrap.dedent("""
+             #!/bin/sh
+             exec curl -F 'bp=<-' DEPLOYMENT_URL
+          """).strip().replace("DEPLOYMENT_URL", url)
 
 
 def get_creds():
@@ -212,8 +221,16 @@ def upload():
     return "%s/%s\n" % (get_url(), uid)
 
 
+@route('/bpaste')
+def serve_bpaste():
+    """ Provide the bpaste script for the given URL. """
+    response.content_type = 'text/plain; charset=utf-8'
+    url = get_url()
+    return BPASTE.setdefault(url, bpaste(url))
+
+
 if __name__ == '__main__':
-    DESCRIPTIONS, STORAGE = {}, create_db(get_creds())
+    DESCRIPTIONS, BPASTE, STORAGE = {}, {}, create_db(get_creds())
     # for cloudControl we need to get the PORT from the env
     port = int(os.environ.get('PORT', 5000))
     run(host='0.0.0.0', port=port)
