@@ -16,7 +16,7 @@ import zlib
 
 from bottle import route, run, request, response, abort
 from bson.binary import Binary
-from pymongo import Connection
+from pymongo import MongoClient
 
 # the name of the collection in the MongoDB
 COLLECTION = 'paste_collection'
@@ -135,7 +135,7 @@ class MongoDB(Database):
     def __init__(self, mongodburi):
         self._description = 'mongo'
         db_name = mongodburi[mongodburi.rfind('/') + 1:]
-        self._mongo = Connection(mongodburi)[db_name][COLLECTION]
+        self._mongo = MongoClient(mongodburi)[db_name][COLLECTION]
 
     def __contains__(self, uid):
         return self._mongo.find_one(uid) is not None
