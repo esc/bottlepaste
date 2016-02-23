@@ -6,14 +6,16 @@ A command line pastebin akin to `sprunge.us <http://sprunge.us/>`_ but using
 `MongoDB <http://www.mongodb.org/>`_ via `PyMongo
 <http://api.mongodb.org/python/current/>`_ as storage.
 
-The author deploys it on `cloudControl <https://www.cloudcontrol.com/>`_ using
+**It was online until 2016-02-23, when cloudControl was decomissioned.**
+
+The author used to deploy it on `cloudControl <https://www.cloudcontrol.com/>`_ using
 a MongoDB provided by `mongolab <https://www.mongolab.com/home>`_ as:
 
 * `bp.zetatech.org <http://bp.zetatech.org/>`_
 * `bottlepaste.zetatech.org <http://bottlepaste.zetatech.org/>`_
 * `bottlepaste.cloudcontrolled.com <http://bottlepaste.cloudcontrolled.com/>`_
 
-Enjoy!
+I hope you enjoyed!
 
 Stability
 ---------
